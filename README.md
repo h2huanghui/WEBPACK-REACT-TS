@@ -14,22 +14,6 @@
 
 ## 生成文件夹为/dist
 
-# 2. Doba Dropshipping
-
-## install npm packages
-`npm i`
-
-## dev 开发环境 使用mock数据
-`npm run dev_doba`
-
-## build 生产环境 使用接口数据
-`npm run build_doba`
-
-## test 测试环境 使用接口数据
-`npm run build_test_doba`
-
-### 生成文件夹为/dist_doba
-
 # 接口文档地址
 
 ## 文档：
