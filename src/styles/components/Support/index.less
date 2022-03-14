@@ -1,0 +1,261 @@
+.crov-support-wrap{
+  position:fixed;
+  will-change: scroll-position;
+  z-index: 999;
+  transform: translate3d(0,0,0);
+  right: 20px;
+  bottom: 120px;
+  .crov-support {
+    width: 54px;
+    *padding-bottom: 10px;
+    
+    
+    
+}
+
+ul {
+    list-style: none
+}
+
+.crov-support > div {
+    position: relative;
+    border-top: 1px solid #e6ecf2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1)
+}
+
+.crov-support > div:first-child {
+    border-top: 0
+}
+
+.crov-support a {
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-color: #FFF;
+    text-align: center;
+    font-family: 'dsc-icon';
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    *display: inline;
+    *zoom:1;font-size: 32px;
+    line-height: 54px;
+    text-decoration: none !important;
+    color: #888
+}
+
+.crov-support a:hover {
+    color: #FFF
+}
+
+.crov-support a:hover {
+    background-color: #1470cc
+}
+
+.crov-support .f-contact {
+    background-position: 0 0
+}
+
+.crov-support .f-tm-on {
+    background-position: 0 -50px
+}
+
+.crov-support .f-tm-off {
+    background-position: 0 -50px;
+    background-color: #bfbfbf
+}
+
+.crov-support .f-tm-off:hover {
+    background-color: #a6a6a6
+}
+
+.crov-support .f-live-chat:before {
+    content: '\e015'
+}
+
+.crov-support .f-help:before {
+    content: '\e08d'
+}
+
+.crov-support .f-wechat::before{
+  content: '\e147'
+}
+
+.crov-support .f-contact-buyer-service {
+    background-position: 0 -150px
+}
+
+.crov-support .f-survey {
+    background-position: 0 -200px
+}
+
+.crov-support .f-go-top:before {
+    content: '\e007'
+}
+
+.crov-support .popup-wrap {
+    height: 54px;
+    position: absolute;
+    right: 60px;
+    top: -2px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .7s
+}
+
+.crov-support .popup-wrap.open {
+    opacity: 1
+}
+
+.crov-support .popup-wrap.open .popup {
+    display: table-cell
+}
+
+.crov-support .popup {
+    display: none;
+    vertical-align: middle;
+    height: 58px;
+    width: 220px;
+    text-align: right;
+    padding-right: 10px
+}
+
+.crov-support .popup-box {
+    display: inline-block;
+    line-height: 1.5;
+    padding: 5px 10px;
+    position: relative;
+    white-space: nowrap;
+    border: 1px solid #ced3d9;
+    box-shadow: 1px 1.5px 4px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    color: #555;
+    background: #fff;
+    text-align: left;
+    font-size: 14px;
+    *margin: 6px 10px 0 0
+}
+
+.crov-support .arrow {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -6px;
+    border: 6px solid transparent;
+    border-left-color: #ccc
+}
+
+.crov-support .arrow-inner {
+    position: absolute;
+    right: -5px;
+    top: -6px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: #fff
+}
+
+.crov-support a {
+    color: #8e969d;
+    font-size: 22px
+}
+
+
+.crov-support .f-contact-us:before {
+    content: '\e02c'
+}
+
+.crov-support .f-go-top:before {
+    content: '\e00d'
+}
+
+.crov-support > div:first-child a {
+    border-radius: 4px 4px 0 0
+}
+
+.crov-support > div:last-child a,.crov-support .li-visible a {
+    border-radius: 0 0 4px 4px
+}
+
+.crov-support > div {
+    border-top-color: #f0f0f0;
+    box-shadow: 0 10px 30px rgba(211,211,211,0.3)
+}
+
+.crov-support .popup-box {
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 0 10px rgba(211,211,211,0.3)
+}
+
+.crov-support .arrow {
+    border-left-color: #f0f0f0
+}
+
+@media screen and (min-width: 320px) and (max-width:1600px) {
+    .crov-support {
+        width:40px;
+        right: 10px !important
+    }
+
+    .crov-support a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px
+    }
+
+    .crov-support .popup-wrap {
+        height: 40px;
+        right: 45px
+    }
+
+    .crov-support .popup {
+        height: 40px
+    }
+
+    .crov-support a {
+        font-size: 22px
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:1023px) {
+    .crov-support {
+        bottom:40px !important
+    }
+
+    .crov-support .help {
+        display: none
+    }
+
+    .crov-support .liveChat {
+        display: none
+    }
+
+    .crov-support > div {
+        border-top: 0;
+        box-shadow: none
+    }
+
+    .crov-support a {
+        border-radius: 50%;
+        color: #fff;
+        background: rgba(0,0,0,0.3)
+    }
+
+    .crov-support a:hover {
+        background: rgba(0,0,0,0.6)
+    }
+
+    .crov-support .popup-wrap {
+        display: none
+    }
+
+    .crov-support.crov-support a {
+        border-radius: inherit
+    }
+  }
+
+}

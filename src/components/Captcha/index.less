@@ -1,0 +1,23 @@
+.captcha-input-wrap {
+  display: flex;
+  .ant-input-group-addon {
+    padding: 0;
+    overflow: hidden;
+  }
+  .icon-wrap {
+    padding-left: 10px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 16px;
+    &::before {
+      content: "\e046";
+      font-family: "dsc-icon";
+      color: #555;
+      text-align: right;
+    }
+  }
+  img {
+    width: 98px;
+    height: 30px;
+  }
+}

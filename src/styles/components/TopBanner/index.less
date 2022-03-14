@@ -1,0 +1,116 @@
+.header-top-notice {
+    height: 60px;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+  .header-top-img {
+    display: block;
+    height: 60px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+  }
+  .movie-btn{
+    width: 115px;
+    height: 46px;
+    position: absolute;
+    left: 50%;
+    top: 7px;
+    margin-left: 230px;
+    background: url("/common/img/header/doba/join-btn.gif") no-repeat center center;
+    background-size: contain;
+  }
+  .header-top-close {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    .ob-icon {
+      padding: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+  }
+  .header-top-ad {
+    background: url("/common/img/header/ad.png") no-repeat;
+    width: 21px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &.malaysia {
+    //background-color: #0a3c7b;
+    background: #a5455e url("/Alexandria/img/malaysia/top-notice-bg-new.jpg") center 0 no-repeat;
+  }
+  .header-top-notice-inner {
+    max-width: 1480px;
+    margin: 0 auto;
+
+  }
+  .header-top-notice-bg {
+    margin-right: 20px;
+    margin-left: 20px;
+    //background: url("/Alexandria/img/malaysia/top-notice-bg-new.jpg") right 0 no-repeat;
+  }
+
+  &.head-top-notice-ds {
+    .header-top-img-1024 {
+      background: #09a2ff url("/common/img/header/topNotice/img_1024@2x.png") center center no-repeat;
+      background-size: contain;
+    }
+    .header-top-img-768 {
+      background: #09a2ff url("/common/img/header/topNotice/768@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+    .header-top-img-480 {
+      background: #09a2ff url("/common/img/header/topNotice/480@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+    .announcement-alert {
+      max-width: 1480px;
+    }
+  }
+  // 通用 顶通
+  .header-top-img-1024 {
+    background-size: contain;
+    // background-color: #111;
+  }
+  .header-top-img-768, .header-top-img-480 {
+    display: none;
+    background-size: cover;
+  }
+  @media screen and (max-width: 1024px) {
+    .header-top-img-1024 {
+      background-size: cover;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header-top-img-1024, .header-top-img-480 {
+      display: none;
+    }
+    .header-top-img-768 {
+      display: block;
+    }
+    .movie-btn{
+      margin-left: 130px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .header-top-img-1024, .header-top-img-768 {
+      display: none;
+    }
+    .header-top-img-480 {
+      display: block;
+    }
+    .movie-btn{
+      margin-left: 96px;
+      width: 80px;
+    }
+  }
+
+}

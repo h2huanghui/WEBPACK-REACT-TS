@@ -1,0 +1,245 @@
+body {
+  background-color: #f4f5f6;
+}
+
+/* 公用 */
+.info-container {
+  margin: 0 auto;
+  h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222;
+  }
+
+  .sub-title {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 25px;
+  }
+}
+
+.info-form-wrap {
+  padding: 40px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  .cancel-btn {
+    margin-left: 20px;
+  }
+
+  .ant-alert-error {
+    margin-bottom: 10px;
+  }
+}
+
+/* 邮箱和手机校验组件 */
+.verify-by-container {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  .ant-form-item-label  {
+    text-align: right;
+  }
+  // .verify-by-content {
+  //     margin-left: 10px;
+  // }
+}
+
+.verify-code {
+  .ant-form-item-label  {
+    text-align: right;
+  }
+}
+.verification-code-tip {
+  color: #999;
+  font-size: 14px;
+  margin-top: 5px;
+  // line-height: 40px;
+}
+
+.verify-by-email-container {
+  margin-bottom: 20px;
+
+  .verify-by-email-txt {
+    padding-right: 20px;
+  }
+  .ant-form-item-label  {
+    text-align: right;
+  }
+}
+
+.initital-verify-btn-doba {
+  color: #a6d164;
+  border-color: #a6d164;
+}
+.initital-verify-btn-crov {
+  color: #222;
+  border-color: #ced3d9;
+}
+
+.account-form {
+  color: #222;
+
+  /* 覆盖antd radio样式 */
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+
+  .ant-radio-wrapper {
+    color: #222;
+    line-height: 40px;
+  }
+
+  // .submit {
+  //     margin-top: 30px;
+  // }
+}
+
+/* 有面包屑 */
+.has-bread-container {
+  .ant-breadcrumb {
+    margin-bottom: 15px !important;
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 70px auto 15px !important;
+  }
+
+  .ant-breadcrumb>span:last-child a {
+    color: #222;
+  }
+}
+
+/* 成功页 */
+.success-container {
+  margin: 0 auto;
+
+  .success-content {
+    position: relative;
+  }
+
+  .icon-yes {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    font-size: 28px;
+    color: #8BC540;
+  }
+
+  .success-txt {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .login-in-btn {
+    margin-top: 20px;
+  }
+}
+
+.account-setting-tip {
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  background: #E4F8D1;
+  color: #222;
+  font-size: 14px;
+}
+
+.account-setting-wrap {
+
+  .all-info-wrap {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+  }
+
+  .profile-wrap {
+    margin-bottom: 40px;
+  }
+
+  .title-operate-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .operate-btn {
+      a {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .info-detail {
+    display: flex;
+    margin-bottom: 10px;
+
+    .info-label {
+      color: #999;
+      width: 150px;
+      text-align: right;
+    }
+
+    .info-value {
+      margin-left: 10px;
+      max-width: 630px;
+      word-break: break-all;
+      color: #222;
+
+      a {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .certificate-wrap {
+    margin-bottom: 40px;
+  }
+
+  .certificate-name {
+    color: #222;
+
+    .status {
+      padding-left: 10px;
+      color: #8BC540;
+      font-weight: bold;
+    }
+  }
+
+  .download-btn {
+    padding-left: 10px;
+  }
+}
+
+/* profile */
+.profile-form-wrap {
+
+  .lastName-wrap {
+    margin-left: 10px;
+  }
+
+  .business-wrap {
+    display: flex;
+  }
+
+  .businessCountryId {
+    width: 50%;
+  }
+}
+
+.editPwdForm {
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+  .ant-form-extra {
+    padding-top: 5px;
+    font-size: 12px;
+    color: #999;
+  }
+}

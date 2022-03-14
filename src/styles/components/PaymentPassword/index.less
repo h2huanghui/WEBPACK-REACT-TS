@@ -1,0 +1,72 @@
+//payment password
+.payment-password-wrap {
+  position: relative;
+  .payment-password {
+    z-index: 999;
+    position: relative;
+  }
+  input {
+    opacity: 0;
+    height: 38px;
+    width: 290px;
+    position: absolute;
+    color: transparent;
+    outline: none;
+  }
+  .payment-password-box {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #E7E6E6;
+    width: 230px;
+    padding: 6px 0;
+    border-radius: 3px;
+  }
+  .box-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #F0F0F0;
+    width: 38px;
+    height: 26px;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .box-item.active {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 38px;
+      width: 38px;
+      border: 1px solid #C7E0A2;
+      box-shadow:1px 0px 4px 1px rgba(101,101,101,0.2);
+      border-radius: 3px;
+    }
+  }
+  .box-item.active:not(.filled) {
+    background: url('../../../assets/img/payment/password-blink.gif') no-repeat center center;
+  }
+  .box-item.filled::after {
+    display: block;
+    background: #000;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    content: '';
+    border: 1px solid;
+  }
+  .payment-password-error {
+    color: #E64545;
+    margin-top: 10px;
+  }
+  .with-error {
+    border: 1px solid #E64545;
+    .box-item {
+      border-right: 1px solid #E64545;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

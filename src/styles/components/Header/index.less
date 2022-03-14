@@ -1,0 +1,299 @@
+.dsc-header-wrap{
+  // position: fixed;
+  width: 100%;
+  background: #31333A;
+  height: 80px;
+  z-index: 10;
+}
+.header-user-menu{
+  .ant-dropdown-menu-item{
+    padding: 8px 20px;
+  }
+}
+.dsc-header{
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  .dsc-logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    a {
+      max-width: 224px;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    // > a:first-child{
+    //   padding-right: 8px;
+    //   margin-right: 8px;
+    //   border-right: 1px solid rgba(255,255,255,0.1);
+    // }
+    span{
+      margin-left: 15px;
+      color: #fff;
+      margin-top: 4px;
+    }
+  }
+  .dsc-header-left{
+    display: flex;
+    align-items: center;
+  }
+  .dsc-icon-wrap {
+    display: none;
+    color: #fff;
+    margin-right: 20px;
+    .icon-category2 {
+      font-size: 24px;
+    }
+  }
+  .dsc-menu-link{
+    margin-left: 80px;
+    display: flex;
+    font-size: 16px;
+    .dsc-menu-item{
+      display: block;
+      color: #fff;
+      min-width: 135px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+    }
+    .current-title{
+      background: #212327;
+    }
+    .dsc-menu-item:hover{
+      background: #3F424D;
+    }
+  }
+  .ant-dropdown-trigger{
+    .icon-down{
+      transition: all .3s;
+    }
+  }
+  .ant-dropdown-trigger.ant-dropdown-open{
+    .icon-down{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.dsc-user-info {
+  display: flex;
+  align-items: center;
+  z-index: 11;
+  color: #fff;
+  > span{
+    margin: 0 5px;
+    display: block;
+    max-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .header-username {
+    line-height: 80px;
+    height: 80px;
+    white-space: nowrap;
+    margin-left: 30px;
+    cursor: pointer;
+    .dsc-icon:first-child {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.dsc-header-white{
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(211, 211, 211, 0.4);
+  .dsc-grid{
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .dsc-header{
+    .dsc-logo{
+      span{
+        color: #222;
+      }
+    }
+    .btn-m{
+      display: none;
+    }
+  }
+  // .dsc-user-info {
+  //   .header-username{
+  //     color: #222;
+  //   }
+  // }
+
+}
+
+
+.pad-header-mark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .7;
+  z-index: 9;
+  display: none;
+}
+
+.menu-in-pad {
+  display: none;
+  position: fixed;
+  transition: left .5s ease-out;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .tag-fund-new{
+    font-size: 12px;
+    margin-left: 7px;
+    border-radius: 3px;
+    top: -4px;
+    position: relative;
+    padding: 0 5px;
+    line-height: 1.5;
+  }
+  .menu {
+    height: 100%;
+  }
+
+  .pad-mark {
+    width: calc(~"100% - 235px");
+    position: absolute;
+    height: 100%;
+    left: 235px;
+    opacity: 0;
+  }
+
+  .menu-item-info-wrap {
+    position: absolute;
+    //height: calc(~"100% - 60px");
+    height: 100%;
+    background: #fff;
+    //padding: 10px 20px 0;
+    padding: 10px 20px;
+    overflow-y: auto;
+
+    .menu-title {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .menu-item-title {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .menu-info {
+      padding-top: 20px;
+    }
+  }
+
+
+  .menu-item,
+  .menu-info {
+    width: 235px;
+    background: #fff;
+    font-size: 14px;
+
+    a {
+      color: #222;
+    }
+
+    .menu-item-content-single:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .menu-item-content-multi {
+      padding: 20px 0;
+      border-top: 1px solid #F0F0F0;
+      border-bottom: 1px solid #F0F0F0;
+    }
+
+
+
+    .menu-item-content-ul {
+      li:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.dsc-menu-sub-item{
+  .tag-fund-new{
+    font-size: 12px;
+    margin-left: 7px;
+    border-radius: 3px;
+    top: -4px;
+    position: relative;
+    padding: 0 5px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 1123px) {
+  .dsc-header {
+    .dsc-menu-link {
+      margin-left: 20px;
+      .dsc-menu-item {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dsc-header-wrap {
+    height: 60px;
+  }
+  .dsc-header {
+    height: 60px;
+    .dsc-menu-link {
+      display: none;
+    }
+
+    .dsc-icon-wrap {
+      display: block;
+      margin-top: 4px;
+    }
+
+    .dsc-logo {
+      font-size: 13px;
+
+      a {
+        max-width: 155px;
+      }
+    }
+  }
+
+  .dsc-user-info {
+    display: none;
+  }
+
+  .dsc-menu {
+    display: block;
+    font-size: 13px;
+    margin-top: 4px;
+
+    .dsc-menu-a {
+      color: #fff;
+    }
+  }
+
+  .menu-in-pad {
+    display: block;
+  }
+}

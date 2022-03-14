@@ -1,0 +1,172 @@
+.setting-account-wrap {
+  .tip {
+    margin-top: 20px;
+  }
+
+  a {
+    margin-left: 5px;
+  }
+}
+
+.setting-container {
+  background: #fff;
+  padding: 40px 40px 20px;
+}
+
+.setting-account {
+  display: flex;
+
+  .info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .info-label {
+    color: #888;
+  }
+
+  .info-value {
+    max-width: 500px;
+    word-break: break-word;
+    overflow: hidden;
+  }
+
+  .account-item {
+    margin-right: 10%;
+  }
+}
+
+.add-edit-product-dialog {
+  .ant-form-item {
+    margin-bottom: 0px;
+  }
+
+  .label {
+    color: #888;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .required {
+    &::before {
+      content: '* ';
+      color: #FC5A5C;
+    }
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+
+.edit-login-pwd-container {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  .ant-col-sm-4 {
+    width: 200px;
+  }
+
+  .ant-col-sm-6 {
+    width: 340px;
+  }
+
+  .cnt-tip {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .ant-form-item {
+    margin-bottom: 15px;
+    // display: flex;
+  }
+
+  .ant-form-item-label>label {
+    color: #888;
+  }
+
+  // .ant-form-item-control-wrapper {
+  //   flex: 1;
+  // }
+
+  .sms-code-wrap {
+    position: relative;
+    width: 540px;
+
+    .ant-form-extra {
+      width: 140%;
+      color: #222;
+      font-size: 12px;
+      color: #888;
+      margin-top: 0;
+      padding-top: 5px;
+    }
+  }
+
+  .get-code-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #1470CC;
+    height: auto;
+    border: none;
+    padding: 0;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .submit-btn,
+  .captcha-verify-code {
+    .ant-col-sm-offset-4 {
+      margin-left: 200px;
+    }
+
+    .ant-col-sm-offset-6 {
+      margin-left: 340px;
+    }
+  }
+
+  .success-container {
+    padding: 20px 15px 0 20px;
+  }
+
+  .success-content {
+    font-size: 18px;
+    margin-left: 50px;
+
+    p {
+      margin: 3px 0 20px;
+    }
+  }
+
+  .icon-yes {
+    float: left;
+    width: 50px;
+    font-size: 32px;
+    color: #00bf00;
+  }
+}
+
+@media (max-width: 768px) {
+  .setting-container {
+    padding: 40px 20px;
+  }
+  .setting-account {
+    flex-wrap: wrap;
+    .info-label {
+      flex-shrink: 0;
+    }
+    .account-item {
+      margin-right: 0;
+    }
+  }
+}

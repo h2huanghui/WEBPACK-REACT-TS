@@ -1,0 +1,31 @@
+@import "../../../_mixin.less";
+@import "./AddressList.less";
+@import '../../../components/module/_file-ico.less' ;
+
+
+.enhance-modal-content{
+  margin-left: 0;
+
+  .ant-form-item{
+    margin-bottom: 10px;
+    &.form-item-phone{
+      margin-bottom: 15px;
+    }
+    &.form-item-address1{
+      margin-bottom: 0;
+    }
+    &.form-item-save{
+      .ant-form-item-control{
+        line-height: 20px;
+      }
+    }
+    &.form-item-default{
+      margin-bottom: 0;
+      .ant-form-item-control{
+        line-height: 20px;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,148 @@
+@import "./common.less";
+
+.merged-tip-detail {
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #faf2c8;
+  color: #39384d;
+  .icon-caution{
+    color: #faad14;
+    margin-right: 5px;
+  }
+}
+.ant-popover-content {
+  max-width: 400px;
+}
+
+.logistics-detail,.logistics-bill-detail {
+  font-family: @font-family;
+  margin-bottom: 20px;
+  .dsc-block{
+    padding: 40px;
+  }
+  .ant-tabs{
+    color: #555;
+  }
+  .ant-btn-primary[disabled]{
+    color: #fff;
+    background-color: rgba(20, 122, 204, 0.3);
+    border-color: unset;
+  }
+  .header {
+    margin-bottom: 8px;
+    .status {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      color: #333;
+    }
+    .opt-button {
+      min-width: 90px;
+      height: 40px;
+      border-radius: 3px;
+    }
+  }
+  .content {
+    .row-underline:not(:last-child) {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    &-item {
+      display: flex;
+      margin: 20px 10px 20px 0;
+    }
+    &-label,
+    &-value {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &-value {
+      color: #222;
+      word-break: break-word;
+      div > span {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      .icon-info {
+        color: #888;
+        padding-left: 5px;
+      }
+    }
+    &-extra {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+  .content-label {
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    color: #888;
+    flex-shrink: 0;
+    &::after {
+      content: ":";
+      margin: 0 4px;
+    }
+  }
+  .content-value-second {
+    color: #888;
+  }
+  .ant-table-thead > tr > th {
+    background: #fafafa;
+  }
+  .ant-table-tbody{
+    color: #555;
+    .annotation{
+      color: #888;
+    }
+  }
+  ul.weights {
+    padding-inline-start: 0;
+    list-style-type: none;
+    padding: 20px 20px 40px 0;
+    li {
+      margin: 7px 0;
+    }
+    li,
+    div {
+      display: flex;
+      word-break: break-word;
+    }
+    li div:first-child {
+      min-width: 200px;
+    }
+  }
+  div.goods-item {
+    padding-inline-start: 0;
+    list-style-type: none;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    & > div {
+      display: flex;
+      word-break: break-word;
+      &:not(:first-child) {
+        margin-top: 19px;
+      }
+      & > div {
+        display: flex;
+        margin-right: 40px;
+        max-width: 50%;
+      }
+    }
+  }
+  .package-and-goods {
+    .title {
+      font-weight: 600;
+      color: #222;
+    }
+  }
+  .tip-table-yellow{
+    color: #faad14;
+  }
+}
+.locus-wrapper{
+  .ant-modal-confirm-content{
+    padding: 10px 20px;
+  }
+}

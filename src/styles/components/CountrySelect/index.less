@@ -1,0 +1,367 @@
+ul,li{
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+// base color
+@color-red: #E64545;
+// 0 70 90
+@color-blue: #1470CC;
+// 210 90 80
+@color-yellow: #FF7733;
+// 20 80 100
+
+@color-black-dark: #222;
+@color-black: #555;
+@color-black-light: #888;
+
+@black: @color-black-dark;
+
+@gray: #f5f7fa;
+@gray-i: @color-black;
+@gray-ii: @color-black-light;
+
+@gray-iv: #dae0e6;
+@gray-v: #e6ecf2;
+@gray-vi: #a1aab2;
+
+@red: @color-red;
+
+
+// +++++++++++++++++++++++++++++++++++++
+.tab-btns-wrap {
+	text-align: center;
+	border-bottom: 1px solid @gray-iv;
+	margin: 0 10px;
+}
+
+.tab-btns {
+	white-space: nowrap;
+	display: flex;
+	margin-bottom: -1px;
+}
+
+.tab-btn {
+	padding: 10px;
+	box-sizing: border-box;
+
+	color: @gray-ii;
+
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+	font-size: 14px;
+
+	&.active {
+		color: @black;
+		border-bottom: 2px solid @primary-color;
+		cursor: default;
+	}
+}
+.tab-panes{
+	padding: 5px 0;
+	max-height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.tab-pane{
+	max-height: 280px;
+	min-width: 300px;
+}
+.tab-pane-item{
+	padding: 5px 10px;
+	color: #555;
+	cursor: pointer;
+
+	&:hover{
+		background: #F4F5F6;
+	}
+	&.active{
+		background: #F4F5F6;
+	}
+}
+
+
+.pos(@x, @y: @x){
+	background-position: @x @y;
+}
+
+.flag {
+	&:before {
+		content: "";
+		width: 16px;
+		height: 11px;
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 0;
+		background: url("../../../assets/img/countrySelect/flags.png") no-repeat;
+	}
+}
+
+.flag-ad:before {.pos(-16px, 0)}
+.flag-ae:before {.pos(-32px, 0)}
+.flag-af:before {.pos(-48px, 0)}
+.flag-ag:before {.pos(-64px, 0)}
+.flag-ai:before {.pos(-80px, 0)}
+.flag-al:before {.pos(-96px, 0)}
+.flag-am:before {.pos(-112px, 0)}
+.flag-an:before {.pos(-128px, 0)}
+.flag-ao:before {.pos(-144px, 0)}
+.flag-ar:before {.pos(-160px, 0)}
+.flag-as:before {.pos(-176px, 0)}
+.flag-at:before {.pos(-192px, 0)}
+.flag-au:before {.pos(-208px, 0)}
+.flag-aw:before {.pos(-224px, 0)}
+.flag-az:before {.pos(-240px, 0)}
+.flag-ba:before {.pos(0, -11px)}
+.flag-bb:before {.pos(-16px, -11px)}
+.flag-bd:before {.pos(-32px, -11px)}
+.flag-be:before {.pos(-48px, -11px)}
+.flag-bf:before {.pos(-64px, -11px)}
+.flag-bg:before {.pos(-80px, -11px)}
+.flag-bh:before {.pos(-96px, -11px)}
+.flag-bi:before {.pos(-112px, -11px)}
+.flag-bj:before {.pos(-128px, -11px)}
+.flag-bm:before {.pos(-144px, -11px)}
+.flag-bn:before {.pos(-160px, -11px)}
+.flag-bo:before {.pos(-176px, -11px)}
+.flag-br:before {.pos(-192px, -11px)}
+.flag-bs:before {.pos(-208px, -11px)}
+.flag-bt:before {.pos(-224px, -11px)}
+.flag-bv:before {.pos(-240px, -11px)}
+.flag-bw:before {.pos(0, -22px)}
+.flag-by:before {.pos(-16px, -22px)}
+.flag-bz:before {.pos(-32px, -22px)}
+.flag-ca:before {.pos(-48px, -22px)}
+.flag-catalonia:before {.pos(-64px, -22px)}
+.flag-cd:before {.pos(-80px, -22px)}
+.flag-cf:before {.pos(-96px, -22px)}
+.flag-cg:before {.pos(-112px, -22px)}
+.flag-ch:before {.pos(-128px, -22px)}
+.flag-ci:before {.pos(-144px, -22px)}
+.flag-ck:before {.pos(-160px, -22px)}
+.flag-cl:before {.pos(-176px, -22px)}
+.flag-cm:before {.pos(-192px, -22px)}
+.flag-cn:before {.pos(-208px, -22px)}
+.flag-co:before {.pos(-224px, -22px)}
+.flag-cr:before {.pos(-240px, -22px)}
+.flag-cu:before {.pos(0, -33px)}
+.flag-cv:before {.pos(-16px, -33px)}
+.flag-cw:before {.pos(-32px, -33px)}
+.flag-cy:before {.pos(-48px, -33px)}
+.flag-cz:before {.pos(-64px, -33px)}
+.flag-de:before {.pos(-80px, -33px)}
+.flag-dj:before {.pos(-96px, -33px)}
+.flag-dk:before {.pos(-112px, -33px)}
+.flag-dm:before {.pos(-128px, -33px)}
+.flag-do:before {.pos(-144px, -33px)}
+.flag-dz:before {.pos(-160px, -33px)}
+.flag-ec:before {.pos(-176px, -33px)}
+.flag-ee:before {.pos(-192px, -33px)}
+.flag-eg:before {.pos(-208px, -33px)}
+.flag-eh:before {.pos(-224px, -33px)}
+.flag-england:before {.pos(-240px, -33px)}
+.flag-er:before {.pos(0, -44px)}
+.flag-es:before {.pos(-16px, -44px)}
+.flag-et:before {.pos(-32px, -44px)}
+.flag-eu:before {.pos(-48px, -44px)}
+.flag-fi:before {.pos(-64px, -44px)}
+.flag-fj:before {.pos(-80px, -44px)}
+.flag-fk:before {.pos(-96px, -44px)}
+.flag-fm:before {.pos(-112px, -44px)}
+.flag-fo:before {.pos(-128px, -44px)}
+.flag-fr:before {.pos(-144px, -44px)}
+.flag-ga:before {.pos(-160px, -44px)}
+.flag-gb:before {.pos(-176px, -44px)}
+.flag-gd:before {.pos(-192px, -44px)}
+.flag-ge:before {.pos(-208px, -44px)}
+.flag-gf:before {.pos(-224px, -44px)}
+.flag-gg:before {.pos(-240px, -44px)}
+.flag-gh:before {.pos(0, -55px)}
+.flag-gi:before {.pos(-16px, -55px)}
+.flag-gl:before {.pos(-32px, -55px)}
+.flag-gm:before {.pos(-48px, -55px)}
+.flag-gn:before {.pos(-64px, -55px)}
+.flag-gp:before {.pos(-80px, -55px)}
+.flag-gq:before {.pos(-96px, -55px)}
+.flag-gr:before {.pos(-112px, -55px)}
+.flag-gs:before {.pos(-128px, -55px)}
+.flag-gt:before {.pos(-144px, -55px)}
+.flag-gu:before {.pos(-160px, -55px)}
+.flag-gw:before {.pos(-176px, -55px)}
+.flag-gy:before {.pos(-192px, -55px)}
+.flag-hk:before {.pos(-208px, -55px)}
+.flag-hm:before {.pos(-224px, -55px)}
+.flag-hn:before {.pos(-240px, -55px)}
+.flag-hr:before {.pos(0, -66px)}
+.flag-ht:before {.pos(-16px, -66px)}
+.flag-hu:before {.pos(-32px, -66px)}
+.flag-ic:before {.pos(-48px, -66px)}
+.flag-id:before {.pos(-64px, -66px)}
+.flag-ie:before {.pos(-80px, -66px)}
+.flag-il:before {.pos(-96px, -66px)}
+.flag-im:before {.pos(-112px, -66px)}
+.flag-in:before {.pos(-128px, -66px)}
+.flag-io:before {.pos(-144px, -66px)}
+.flag-iq:before {.pos(-160px, -66px)}
+.flag-ir:before {.pos(-176px, -66px)}
+.flag-is:before {.pos(-192px, -66px)}
+.flag-it:before {.pos(-208px, -66px)}
+.flag-je:before {.pos(-224px, -66px)}
+.flag-jm:before {.pos(-240px, -66px)}
+.flag-jo:before {.pos(0, -77px)}
+.flag-jp:before {.pos(-16px, -77px)}
+.flag-ke:before {.pos(-32px, -77px)}
+.flag-kg:before {.pos(-48px, -77px)}
+.flag-kh:before {.pos(-64px, -77px)}
+.flag-ki:before {.pos(-80px, -77px)}
+.flag-km:before {.pos(-96px, -77px)}
+.flag-kn:before {.pos(-112px, -77px)}
+.flag-kp:before {.pos(-128px, -77px)}
+.flag-kr:before {.pos(-144px, -77px)}
+.flag-kurdistan:before {.pos(-160px, -77px)}
+.flag-kw:before {.pos(-176px, -77px)}
+.flag-ky:before {.pos(-192px, -77px)}
+.flag-kz:before {.pos(-208px, -77px)}
+.flag-la:before {.pos(-224px, -77px)}
+.flag-lb:before {.pos(-240px, -77px)}
+.flag-lc:before {.pos(0, -88px)}
+.flag-li:before {.pos(-16px, -88px)}
+.flag-lk:before {.pos(-32px, -88px)}
+.flag-lr:before {.pos(-48px, -88px)}
+.flag-ls:before {.pos(-64px, -88px)}
+.flag-lt:before {.pos(-80px, -88px)}
+.flag-lu:before {.pos(-96px, -88px)}
+.flag-lv:before {.pos(-112px, -88px)}
+.flag-ly:before {.pos(-128px, -88px)}
+.flag-ma:before {.pos(-144px, -88px)}
+.flag-mc:before {.pos(-160px, -88px)}
+.flag-md:before {.pos(-176px, -88px)}
+.flag-me:before {.pos(-192px, -88px)}
+.flag-mg:before {.pos(-208px, -88px)}
+.flag-mh:before {.pos(-224px, -88px)}
+.flag-mk:before {.pos(-240px, -88px)}
+.flag-ml:before {.pos(0, -99px)}
+.flag-mm:before {.pos(-16px, -99px)}
+.flag-mn:before {.pos(-32px, -99px)}
+.flag-mo:before {.pos(-48px, -99px)}
+.flag-mp:before {.pos(-64px, -99px)}
+.flag-mq:before {.pos(-80px, -99px)}
+.flag-mr:before {.pos(-96px, -99px)}
+.flag-ms:before {.pos(-112px, -99px)}
+.flag-mt:before {.pos(-128px, -99px)}
+.flag-mu:before {.pos(-144px, -99px)}
+.flag-mv:before {.pos(-160px, -99px)}
+.flag-mw:before {.pos(-176px, -99px)}
+.flag-mx:before {.pos(-192px, -99px)}
+.flag-my:before {.pos(-208px, -99px)}
+.flag-mz:before {.pos(-224px, -99px)}
+.flag-na:before {.pos(-240px, -99px)}
+.flag-nc:before {.pos(0, -110px)}
+.flag-ne:before {.pos(-16px, -110px)}
+.flag-nf:before {.pos(-32px, -110px)}
+.flag-ng:before {.pos(-48px, -110px)}
+.flag-ni:before {.pos(-64px, -110px)}
+.flag-nl:before {.pos(-80px, -110px)}
+.flag-no:before {.pos(-96px, -110px)}
+.flag-np:before {.pos(-112px, -110px)}
+.flag-nr:before {.pos(-128px, -110px)}
+.flag-nu:before {.pos(-144px, -110px)}
+.flag-nz:before {.pos(-160px, -110px)}
+.flag-om:before {.pos(-176px, -110px)}
+.flag-pa:before {.pos(-192px, -110px)}
+.flag-pe:before {.pos(-208px, -110px)}
+.flag-pf:before {.pos(-224px, -110px)}
+.flag-pg:before {.pos(-240px, -110px)}
+.flag-ph:before {.pos(0, -121px)}
+.flag-pk:before {.pos(-16px, -121px)}
+.flag-pl:before {.pos(-32px, -121px)}
+.flag-pm:before {.pos(-48px, -121px)}
+.flag-pn:before {.pos(-64px, -121px)}
+.flag-pr:before {.pos(-80px, -121px)}
+.flag-ps:before {.pos(-96px, -121px)}
+.flag-pt:before {.pos(-112px, -121px)}
+.flag-pw:before {.pos(-128px, -121px)}
+.flag-py:before {.pos(-144px, -121px)}
+.flag-qa:before {.pos(-160px, -121px)}
+.flag-re:before {.pos(-176px, -121px)}
+.flag-ro:before {.pos(-192px, -121px)}
+.flag-rs:before {.pos(-208px, -121px)}
+.flag-ru:before {.pos(-224px, -121px)}
+.flag-rw:before {.pos(-240px, -121px)}
+.flag-sa:before {.pos(0, -132px)}
+.flag-sb:before {.pos(-16px, -132px)}
+.flag-sc:before {.pos(-32px, -132px)}
+.flag-scotland:before {.pos(-48px, -132px)}
+.flag-sd:before {.pos(-64px, -132px)}
+.flag-se:before {.pos(-80px, -132px)}
+.flag-sg:before {.pos(-96px, -132px)}
+.flag-sh:before {.pos(-112px, -132px)}
+.flag-si:before {.pos(-128px, -132px)}
+.flag-sk:before {.pos(-144px, -132px)}
+.flag-sl:before {.pos(-160px, -132px)}
+.flag-sm:before {.pos(-176px, -132px)}
+.flag-sn:before {.pos(-192px, -132px)}
+.flag-so:before {.pos(-208px, -132px)}
+.flag-somaliland:before {.pos(-224px, -132px)}
+.flag-sr:before {.pos(-240px, -132px)}
+.flag-ss:before {.pos(0, -143px)}
+.flag-st:before {.pos(-16px, -143px)}
+.flag-sv:before {.pos(-32px, -143px)}
+.flag-sx:before {.pos(-48px, -143px)}
+.flag-sy:before {.pos(-64px, -143px)}
+.flag-sz:before {.pos(-80px, -143px)}
+.flag-tc:before {.pos(-96px, -143px)}
+.flag-td:before {.pos(-112px, -143px)}
+.flag-tf:before {.pos(-128px, -143px)}
+.flag-tg:before {.pos(-144px, -143px)}
+.flag-th:before {.pos(-160px, -143px)}
+.flag-tj:before {.pos(-176px, -143px)}
+.flag-tk:before {.pos(-192px, -143px)}
+.flag-tl:before {.pos(-208px, -143px)}
+.flag-tm:before {.pos(-224px, -143px)}
+.flag-tn:before {.pos(-240px, -143px)}
+.flag-to:before {.pos(0, -154px)}
+.flag-tr:before {.pos(-16px, -154px)}
+.flag-tt:before {.pos(-32px, -154px)}
+.flag-tv:before {.pos(-48px, -154px)}
+.flag-tw:before {.pos(-64px, -154px)}
+.flag-tz:before {.pos(-80px, -154px)}
+.flag-ua:before {.pos(-96px, -154px)}
+.flag-ug:before {.pos(-112px, -154px)}
+.flag-um:before {.pos(-128px, -154px)}
+.flag-us:before {.pos(-144px, -154px)}
+.flag-uy:before {.pos(-160px, -154px)}
+.flag-uz:before {.pos(-176px, -154px)}
+.flag-va:before {.pos(-192px, -154px)}
+.flag-vc:before {.pos(-208px, -154px)}
+.flag-ve:before {.pos(-224px, -154px)}
+.flag-vg:before {.pos(-240px, -154px)}
+.flag-vi:before {.pos(0, -165px)}
+.flag-vn:before {.pos(-16px, -165px)}
+.flag-vu:before {.pos(-32px, -165px)}
+.flag-wales:before {.pos(-48px, -165px)}
+.flag-wf:before {.pos(-64px, -165px)}
+.flag-ws:before {.pos(-80px, -165px)}
+.flag-ye:before {.pos(-96px, -165px)}
+// .flag-yt:before {.pos(-112px, -165px)}
+.flag-yt:before {.pos(-144px, -44px)}
+.flag-za:before {.pos(-128px, -165px)}
+.flag-zanzibar:before {.pos(-144px, -165px)}
+.flag-zm:before {.pos(-160px, -165px)}
+.flag-zw:before {.pos(-176px, -165px)}
+
+.flag-bl:before {.pos(-144px, -44px)}
+.flag-ax:before {.pos(-0px, -198px)}
+.flag-cx:before {.pos(-16px, -198px)}
+.flag-cc:before {.pos(-32px, -198px)}
+// .flag-mf:before {.pos(-48px, -198px)}
+.flag-mf:before {.pos(-144px, -44px)}
+.flag-zr:before {.pos(-80px, -22px)}
+.flag-sj:before {.pos(-96px, -110px)}
+.flag-tw:before {.pos(-64px, -198px)}
+
+
+.flag-04:before {.pos(-48px, -66px)}
+.flag-ssd:before {.pos(0, -143px)}

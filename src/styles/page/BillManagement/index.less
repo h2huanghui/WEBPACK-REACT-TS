@@ -1,0 +1,119 @@
+.logistics-bill-filter {
+  .filter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .wrapper-item {
+      margin-right: 10px;
+      &.wait-to-pay,.bill-no{
+        width: 260px;
+      }
+      &.bill-status{
+        width: 200px;
+        &>div{
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 768px){
+        margin-bottom: 10px;
+      }
+      @media screen and (max-width: 500px){
+        margin: 0 0 10px;
+        &:last-child{
+          margin-bottom: 0;
+          height: 30px;
+        }
+        &.wait-to-pay,&.bill-status,&.bill-no{
+          width: 100%;
+        }
+      }
+      &.wait-to-pay {
+        position: relative;
+        .amount-range-wrapper {
+          position: absolute;
+          white-space: nowrap;
+          min-height: 100px;
+          min-width: 100%;
+          max-width: 300%;
+          padding: 20px;
+          background-color: #fff;
+          z-index: 2;
+          border-radius: 3px;
+          box-shadow: 0px 12px 48px 16px rgba(0, 0, 0, 0.03),
+            0px 9px 28px 0px rgba(0, 0, 0, 0.05),
+            0px 6px 16px -8px rgba(0, 0, 0, 0.08);
+        }
+        .range-separator {
+          display: inline-block;
+          margin: 0 10px;
+        }
+        .ant-input-number {
+          width: 150px;
+        }
+      }
+    }
+    .ant-calendar-range-picker-separator {
+      color: #b3b3b3;
+    }
+  }
+}
+.logistics-bill-list {
+  padding: 0;
+  margin-bottom: 20px;
+  max-width: 100%;
+  overflow-x: auto;
+  .ant-table-thead > tr > th {
+    padding-bottom: 14px;
+  }
+  .ant-table-tbody {
+    color: #555;
+    .paying {
+      color: #888;
+      &::before {
+        content: "*";
+      }
+    }
+    & > tr {
+      vertical-align: top;
+      &:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+        background-color: unset;
+      }
+      td:not(.merged-tip) {
+        border-bottom-color: #f0f0f0;
+        position: relative;
+        .coverBlock{
+          content: "";
+          width: 16px;
+          height: 3px;
+          position: absolute;
+          bottom: -2px;
+          background-color: white;
+        }
+        &:first-child {
+          &::before {
+            .coverBlock();
+            left: 0;
+          }
+        }
+        &:last-child{
+          &::before {
+            .coverBlock();
+            right: 0;
+          }
+        }
+      }
+    }
+    .ant-btn-primary[disabled] {
+      color: #fff;
+      background-color: rgba(20, 122, 204, 0.3);
+      border-color: unset;
+    }
+  }
+  .ant-table-tbody > tr.wrapper-merged-tip:hover {
+    & td {
+      background-color: unset;
+    }
+  }
+  .ant-pagination {
+    padding-bottom: 20px;
+  }
+}

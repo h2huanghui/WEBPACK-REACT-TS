@@ -1,0 +1,121 @@
+@import "./common.less";
+
+@modal-title-color: #39384d;
+.fund-detail {
+  margin-bottom: 20px;
+  position: relative;
+  .bank-info {
+    position: absolute;
+    right: 0;
+    top: -27px;
+    font-size: 12px;
+    color: #888;
+    line-height: 18px;
+  }
+  &-header {
+    overflow: hidden;
+    position: relative;
+    div:first-child {
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      color: #222222;
+      span {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    div:last-child {
+      float: right;
+      button:last-child {
+        width: 86px;
+      }
+    }
+  }
+  &-list-title {
+    margin: 40px 0 10px;
+    font-size: 16px;
+    color: #222222;
+    line-height: 27px;
+    font-weight: 600;
+  }
+  &-list{
+    .ant-table-tbody > tr > td,.ant-table-thead > tr > th{
+      border-bottom: none;
+    }
+  }
+}
+
+.recharge-cancel-modal {
+  .ant-modal-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: @modal-title-color;
+  }
+  .text-danger{
+    color: @highlight-color;
+  }
+  p {
+    label {
+      font-weight: 400;
+      color: #888;
+    }
+    span {
+      font-weight: 400;
+      color: #222;
+    }
+  }
+}
+
+.recharge-dealing-modal{
+  .ant-modal-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: @modal-title-color;
+  }
+  .ant-modal-body{
+    padding-left: 4px;
+    padding-right: 4px;
+    .ant-table-tbody > tr > td,.ant-table-thead > tr > th{
+      border-bottom: none;
+    }
+  }
+}
+
+.bank-info-text-fund-detail {
+  padding: 10px;
+  p:first-child {
+    font-weight: 600;
+    color: #222;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  p {
+    label {
+      font-weight: 400;
+      color: #888;
+    }
+    span {
+      font-weight: 400;
+      color: #222;
+    }
+  }
+}
+
+@media screen and(max-width: 768px){
+  .fund-detail {
+    .bank-info {
+      top: -43px;
+    }
+    &-header {
+      div:first-child {
+        float: none;
+      }
+      div:last-child {
+        float: none;
+        margin: 10px 0 0 -15px;
+      }
+    }
+  }
+}

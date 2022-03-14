@@ -1,0 +1,132 @@
+@import "./common.less";
+
+.agree-content-dialog {
+  .ant-modal-body {
+    max-height: 500px;
+    overflow-y: scroll;
+    @media screen and (max-width: 767px){
+      max-height: 61.8vh;
+    }
+  }
+}
+
+.fund-publicity {
+  text-align: center;
+  margin-bottom: 20px;
+  .dsc-block .wrapper {
+    //width: 47%;
+    max-width: 600px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+    ul.character {
+      margin: 40px -5px 60px;
+      li.chara-item {
+        display: inline-block;
+        width: 187px;
+        height: 109px;
+        background: #f5f5f5;
+        border-radius: 3px;
+        margin: 0 5px;
+        overflow: hidden;
+        .icon {
+          display: inline-block;
+          width: 48px;
+          padding-top: 48px;
+          background-color: #1470cc;
+          border-radius: 50%;
+          margin: 15px 0 10px;
+          color: #fff;
+          position: relative;
+          i {
+            position: absolute;
+            font-size: 24px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            &[type="safeguard"] {
+              transform: translate(-46%, -50%);
+            }
+            &[type="right-rotation"] {
+              transform: translate(-46%, -55%);
+            }
+          }
+        }
+        .text {
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+          color: #222222;
+          line-height: 21px;
+        }
+        @media screen and (max-width: 500px){
+          width: 74vw;
+        }
+      }
+    }
+  }
+
+  &-agreement {
+    color: #39384d;
+    user-select: none;
+    position: relative;
+    & + button {
+      width: 200px;
+      margin: 10px 0 43px;
+    }
+      .agree-tip {
+        position: absolute;
+        bottom: -17px;
+        left: 50%;
+        transform: translateX(-63%);
+        font-size: 12px;
+        color: red;
+      }
+  }
+
+  &-divider {
+    margin: 0;
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+    background-color: #fff;
+  }
+
+  &-flow.dsc-block .wrapper {
+    width: 80%;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    .title {
+      font-size: 18px;
+      color: #222222;
+      line-height: 27px;
+      margin: 41px 0 20px;
+    }
+    .ant-steps {
+      margin-bottom: 54px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 27px;
+    @media screen and (max-width: 500px){
+      font-size: 16px;
+      line-height: 24px;
+      .ant-divider-inner-text{
+        padding: 0;
+        width: 77vw;
+        white-space: normal;
+        word-break: break-all;
+      }
+    }
+  }
+  hr.divider {
+    border: 1px solid #333;
+    border-bottom: none;
+    opacity: 0.3;
+    margin: 0;
+  }
+}

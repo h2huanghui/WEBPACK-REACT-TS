@@ -1,0 +1,74 @@
+@import "./common.less";
+
+.fund-apply {
+  margin-bottom: 20px;
+  .title-common {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    line-height: 27px;
+  }
+  .item-title-common {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .item-description-common {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .err-tip{
+    color: @error-color;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  &-recharge {
+    padding: 40px;
+    .title {
+      .title-common();
+      & + div {
+        margin-top: 20px;
+        button {
+          margin-left: 20px;
+          width: 150px;
+          @media screen and (max-width: 500px){
+            margin-left: 0;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  &-recharge-flow {
+    padding: 40px;
+    .title {
+      .title-common();
+      & + div {
+        margin-top: 20px;
+        .ant-steps-item {
+          &-active {
+            .ant-steps-item-title {
+              .item-title-common();
+              color: rgba(0, 0, 0, 0.85);
+            }
+            .ant-steps-item-description {
+              .item-description-common();
+              color: rgba(0, 0, 0, 0.85);
+            }
+          }
+          &-wait {
+            .ant-steps-item-title {
+              .item-title-common();
+              color: rgba(0, 0, 0, 0.65);
+            }
+            .ant-steps-item-description {
+              .item-description-common();
+              color: rgba(0, 0, 0, 0.65);
+            }
+          }
+        }
+      }
+    }
+  }
+}

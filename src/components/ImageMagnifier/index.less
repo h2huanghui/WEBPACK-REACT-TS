@@ -1,0 +1,52 @@
+.img-magnifier {
+  .hv-align {
+    cursor: move;
+    position: relative
+  }
+
+  .mask-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 100
+  }
+
+  .mouse-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99
+  }
+
+  .magnifier-container {
+    position: absolute;
+    top: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    z-index: 98;
+    background: #fff;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  .magnifier-img {
+    position: absolute;
+    transform-origin: top left;
+    object-fit: contain;
+  }
+
+  .magnifier-img-none {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
