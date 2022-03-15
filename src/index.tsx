@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './view/App';
+import Hello from './components/demo/Hello';
+import '@/styles/global.less';
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+ReactDOM.render(<Hello name="TypeScript" />, document.getElementById('root'));
