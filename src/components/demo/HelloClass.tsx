@@ -4,8 +4,8 @@ import { Button } from 'antd';
 
 interface Greeting {
   name: string;
-  firstName: string;
-  lastName: string;
+  firstName?: string;
+  lastName?: string;
 }
 
 interface State {
