@@ -15,7 +15,7 @@ module.exports = {
   // entry: path.join(APP_PATH, 'entry.js'),
   output: {
     publicPath: '/',
-    filename: 'static/js/[name].[chunkhash:8].js',
+    filename: 'static/js/[name].[hash:8].js',
     // chunkFilename: 'js/[name].[chunkhash].js',
     path: path.join(ROOTPATH, '/dist')
   },
