@@ -11,7 +11,10 @@ module.exports = merge(baseConfig, {
     host: '127.0.0.1',
     // useLocalIp: true,
     port: '2020',
-    historyApiFallback: true
+    historyApiFallback: true,
+    proxy: {
+      '/api': 'http://localhost:4000'
+    }
   }
 })
 
