@@ -10,14 +10,20 @@ import './App.css';
 
 const { Header, Footer, Content } = Layout;
 
-const App = () => {
+const App = ({ match }: any) => {
+  let defaultKey = match.url.replace('/', '') || 'employee';
   return (
     <ConfigProvider locale={zhCN}>
       <Layout>
         <Header>
-          <Menu theme="dark" mode="horizontal" className="menu">
+          <Menu
+            theme="dark"
+            mode="horizontal"
+            className="menu"
+            defaultSelectedKeys={[defaultKey]}
+          >
             <Menu.Item key="employee">
-              <Link to="/employe">员工管理</Link>
+              <Link to="/employee">员工管理</Link>
             </Menu.Item>
             <Menu.Item key="setting">
               <Link to="/setting">系统设置</Link>
